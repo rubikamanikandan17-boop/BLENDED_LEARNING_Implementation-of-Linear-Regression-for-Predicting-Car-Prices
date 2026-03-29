@@ -8,18 +8,28 @@ To write a program to predict car prices using a linear regression model and tes
 2. Anaconda – Python 3.7 Installation / Jupyter notebook
 
 ## Algorithm
-1. 
-2. 
-3. 
-4. 
-
+```
+1. Import required Python libraries.
+2.Load the car price dataset using pandas.
+3.select independent variables and target variable.
+4.Split the data into training and testing sets.
+5.Apply standard scaling to the feature variables.
+6.Train the Linear Regression model using training data.
+7.Predict prices for the test dataset.
+8.Evaluate the model using MSE, RMSE, R², and MAE.
+9.Analyze residuals to check linear regression assumptions.
+10.End. 
+```
 ## Program:
 ```
 /*
  Program to implement linear regression model for predicting car prices and test assumptions.
-Developed by: Rubika
+Developed by: Rooipka m
 RegisterNumber: 212225040348
 */
+```
+
+```
 import pandas as pd
 import numpy as np
 from sklearn.model_selection import train_test_split
@@ -44,7 +54,7 @@ model=LinearRegression()
 model.fit(X_train_scaled,Y_train)
 #prediction
 Y_pred=model.predict(X_test_scaled)
-print("Name:Rubika")
+print("Name:Roopika m")
 print("Reg. No:212225040348")
 print("MODEL COEFFICIENTS:")
 for feature,coef in zip(X.columns,model.coef_):
@@ -93,7 +103,7 @@ RegisterNumber:
 ```
 
 ## Output:
-Name: Rubika
+Name: Roopika m
 Reg. No: 212225040348
 MODEL COEFFICIENT:
   enginesize: 4523.404901011966
